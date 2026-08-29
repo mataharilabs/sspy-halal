@@ -1,12 +1,11 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "**/*",
-      "use": "@vercel/static"
-    }
-  ],
   "routes": [
+    {
+      "src": "^/$",
+      "dest": "/index.html",
+      "status": 403
+    },
     {
       "src": "/(.*)",
       "dest": "/$1"

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <title>SSPY Halal - Certificate Verification System</title>
+  <meta name="description" content="Shaanxi Shang Pin Yuan Halal Food & Restaurant Co., Ltd - Certificate Online Verification System" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      color: #000;
+      background: #f0f0f0;
+      min-height: 100vh;
+    }
+
+    a, a:visited, a:active { color: #1a5d96; text-decoration: none; }
+    a:hover { color: #0089fe; }
+    img { border: none; max-width: 100%; }
+
+    #main-div {
+      width: 100%;
+      min-height: 100vh;
+      padding: 20px 10px 40px;
+    }
+
+    #header-bar {
+      width: 100%;
+      max-width: 505px;
+      height: 50px;
+      line-height: 50px;
+      background: #033f63;
+      color: #fff;
+      font-size: 18px;
+      text-align: center;
+      margin: 0 auto 0;
+      border-radius: 4px 4px 0 0;
+      letter-spacing: 1px;
+    }
+
+    #container {
+      max-width: 505px;
+      width: 100%;
+      margin: 0 auto;
+      background: #fff;
+      border: 1px solid #e2e2e2;
+      border-top: none;
+      border-radius: 0 0 4px 4px;
+      overflow: hidden;
+    }
+
+    .company-header {
+      text-align: center;
+      padding: 16px 10px 12px;
+      border-bottom: 1px solid #e2e2e2;
+      line-height: 1.6;
+      font-size: 12px;
+    }
+
+    .company-header img {
+      width: 200px;
+      display: block;
+      margin: 0 auto 8px;
+    }
+
+    .company-header .company-name {
+      font-size: 11px;
+      color: #333;
+    }
+
+    table.cert-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table.cert-table td {
+      border-bottom: 1px solid #e2e2e2;
+      border-right: 1px solid #e2e2e2;
+      padding: 7px 8px;
+      vertical-align: middle;
+      line-height: 1.5;
+    }
+
+    .label-cell {
+      width: 90px;
+      text-align: right;
+      color: #555;
+      background: #fafafa;
+      font-size: 11px;
+    }
+
+    .label-cell .en {
+      font-size: 10px;
+      color: #888;
+    }
+
+    .value-cell {
+      font-size: 12px;
+      color: #111;
+    }
+
+    .seal-inline { display: none; }
+    .seal-row { display: table-row; }
+    .seal-row td { text-align: center; padding: 12px; }
+    .seal-row img { width: 150px; }
+
+    @media (min-width: 500px) {
+      .seal-inline { display: table-cell; }
+      .seal-row { display: none; }
+    }
+
+    .footer-bar {
+      width: 100%;
+      max-width: 505px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 10px;
+      font-size: 11px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+<div id="main-div">
+
+  <div id="header-bar">证书在线查询系统</div>
+
+  <div id="container">
+    <div class="company-header">
+      <img src="/logo.jpg" alt="SSPY Halal Logo" />
+      <div class="company-name">Shaanxi Shang Pin Yuan Halal Food &amp; Restaurant Co., Ltd</div>
+    </div>
+
+    <table class="cert-table">
+      <tr>
+        <td class="label-cell">
+          证书编号：<br>
+          <span class="en">Certificate No</span>
+        </td>
+        <td class="value-cell">SSPY-201318-34944</td>
+        <td class="seal-inline" rowspan="4" style="width:120px; text-align:center; padding:10px; border-bottom:1px solid #e2e2e2; border-right:1px solid #e2e2e2;">
+          <img src="/certificate.png" alt="Halal Certificate Seal" style="width:110px;" />
+        </td>
+      </tr>
+      <tr>
+        <td class="label-cell">
+          证书备案号：<br>
+          <span class="en">Registration No</span>
+        </td>
+        <td class="value-cell">SSPY-201318-34944</td>
+      </tr>
+      <tr>
+        <td class="label-cell">
+          公司名称：<br>
+          <span class="en">Company Name</span>
+        </td>
+        <td class="value-cell">SHANGHAI SOAP FACTORY CO.,LTD.</td>
+      </tr>
+      <tr>
+        <td class="label-cell">
+          产品名称：<br>
+          <span class="en">Product Name</span>
+        </td>
+        <td class="value-cell">Plant-based Products, Total 3 Products As Attached, Page 2</td>
+      </tr>
+      <tr>
+        <td class="label-cell">
+          认证时间：<br>
+          <span class="en">Issued On</span>
+        </td>
+        <td class="value-cell" colspan="2">10th Aug, 2026</td>
+      </tr>
+      <tr>
+        <td class="label-cell">
+          证书期限：<br>
+          <span class="en">Valid Until</span>
+        </td>
+        <td class="value-cell" colspan="2">9th Aug, 2029</td>
+      </tr>
+      <tr class="seal-row">
+        <td colspan="2">
+          <img src="/certificate.png" alt="Halal Certificate Seal" />
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="footer-bar">
+    &copy; 2026 Shaanxi Shang Pin Yuan Halal Food &amp; Restaurant Co., Ltd &nbsp;|&nbsp; sspy-halal.com
+  </div>
+
+</div>
+</body>
+</html>
