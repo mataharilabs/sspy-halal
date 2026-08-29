@@ -1,14 +1,11 @@
 {
   "version": 2,
   "routes": [
-    {
-      "src": "^/$",
-      "dest": "/index.html",
-      "status": 403
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
-    }
+    { "src": "^/$",                        "dest": "/index.html", "status": 403 },
+    { "src": "^/a/?$",                     "dest": "/index.html", "status": 403 },
+    { "src": "^/a/chaxun/?$",              "dest": "/index.html", "status": 403 },
+    { "src": "^/a/chaxun/2026/?$",         "dest": "/index.html", "status": 403 },
+    { "src": "^/a/chaxun/2026/0810/?$",    "dest": "/index.html", "status": 403 },
+    { "src": "/(.*)", "dest": "/$1" }
   ]
 }
